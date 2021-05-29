@@ -20,10 +20,10 @@ const userController = {
                 path: 'thoughts',
                 select: '-__v'
             })
-            .populate({
-                path: 'friends',
-                select: '-__v'
-            })
+            // .populate({
+            //     path: 'friends',
+            //     select: '-__v'
+            // })
             .select('-__v')
             .then(dbUserData => {
                 // if no user us found, send 404
@@ -67,7 +67,7 @@ const userController = {
                     res.status(404).json({ message: 'No user found with this id!'});
                     return;
                 }
-                res.json(dbUserData);
+                res.json({message: 'User has been deleted!'});
             })
             .catch(err => res.status(400).json(err));
     },
@@ -76,7 +76,7 @@ const userController = {
     addFriend({params}, res) {
         User.findOneAndUpdate(
             {_id: params.userId},
-            {$push: {friends: body}},
+            {$push: {friends: {_id: params.friendId}}},
             {new: true, runValidators: true}
         )
             .then(dbUserData => {
