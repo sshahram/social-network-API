@@ -14,7 +14,7 @@ This API is especially useful for a social media startup that uses a NoSQL datab
 * [Description](#description)
 * [Table of Contents](#table-of-contents)
 * [Technologies](#technologies)
-* [Task List](#task-list)
+* [Tasks List](#tasks-list)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
@@ -30,12 +30,12 @@ This API is especially useful for a social media startup that uses a NoSQL datab
 * Dotenv
 * JavaScript
 
-## Task List
+## Tasks List
 
-[x] Upon starting the server, Mongoose models are synced to the MongoDB database.
-[x] API GET routes in Insomnia Core for users and thoughts display data in a formatted JSON.
-[x] Add functionality to create, update, and delete users and thoughts in database.
-[x] Add functionality to create and delete reactions to thoughts and add and remove friends to a user’s friend list.
+- [x] Upon starting the server, Mongoose models are synced to the MongoDB database.
+- [x] API GET routes in Insomnia Core for users and thoughts display data in a formatted JSON.
+- [x] Add functionality to create, update, and delete users and thoughts in database.
+- [x] Add functionality to create and delete reactions to thoughts and add and remove friends to a user’s friend list.
 
 ## Usage
 
@@ -81,18 +81,13 @@ You can use "Insomnia Core" or "Postman" to test different API routes for "User"
 
 The following animation shows GET routes to return all users and all thoughts being tested in Insomnia Core:
 
-
 ![alt=GET-all-users-thoughts](./utils/images/demo-01.gif)
-
 
 The following animation shows GET routes to return a single user and a single thought being tested in Insomnia Core:
 
-
 ![alt=GET-single-user-thought](./utils/images/demo-02.gif)
 
-
 The following animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia Core:
-
 
 ![alt=post-put-delete-users](./utils/images/demo-03.gif)
 
