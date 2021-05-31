@@ -20,6 +20,7 @@ This API is especially useful for a social media startup that uses a NoSQL datab
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Screenshots](#screenshots)
+* [Demo Video](#demo-video)
 * [Questions](#questions)
 
 ## Technologies
@@ -94,6 +95,11 @@ The following animation shows the POST, PUT, and DELETE routes for users being t
 The following animation shows the POST and DELETE routes for a user’s friend list being tested in Insomnia Core:
 
 ![alt=post-put-delete-friends](./utils/images/demo-04.gif)
+
+## Demo Video
+
+Please click on the following link to see the Demo video for this project:
+[Link to Demo]()
 
 ## Questions
 
